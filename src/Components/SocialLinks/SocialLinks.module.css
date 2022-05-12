@@ -1,0 +1,10 @@
+.socialLinks {
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.iconLink {
+  margin-right: 1.5rem;
+}

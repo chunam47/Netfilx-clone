@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./Components/Banner";
+import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar";
 import Row from "./Components/Row";
 import requests from "./requests";
@@ -30,6 +31,8 @@ function App() {
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
 
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+
+      <Footer />
     </div>
   );
 }
