@@ -1,21 +1,21 @@
-import './App.css';
-import Banner from './Components/Banner';
-import Navbar from './Components/Navbar';
-import Row from './Components/Row';
-import requests from './requests';
-
-
+import "./App.css";
+import Banner from "./Components/Banner";
+import Navbar from "./Components/Navbar";
+import Row from "./Components/Row";
+import requests from "./requests";
 
 function App() {
   return (
     <div className="app">
-
       <Navbar />
-      
+
       <Banner />
-       
-      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} 
-      isLargeRow />
+
+      <Row
+        title="NETFLIX ORIGINALS"
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
+      />
 
       <Row title="Trending now" fetchUrl={requests.fetchTrending} />
 
@@ -30,8 +30,6 @@ function App() {
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
 
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-
-     
     </div>
   );
 }
